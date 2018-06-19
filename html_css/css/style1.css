@@ -5,7 +5,7 @@ p, h2 {
 h1 {
     color: #f00;
     font-size: 6rem;
-    
+
 }
 
 .rouge {
@@ -18,4 +18,63 @@ h1 {
     font-weight: bolder;
     font-style: italic;
 }
+
+.menu{
+   /* border-style: groove;
+    border-color: #ad3f0d;
+    border-width: 3px;*/
+    
+    border: 5px solid #145f7b;
+    /*arrondir les angles*/
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    width: 300px;
+    
+}
+
+.louvre{
+    border-radius: 50px;
+}
+
+.image{s
+    border: 3px solid #000;
+    background-color: #ed325d;
+   /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin: 50px 50px 50px 50px;*/
+    margin: 40px 60px; /*marge exterieure*/
+    padding: 60px; /*marge interieure*/
+}
+
+.gaulois{
+    text-align: left;
+    padding: 0 20px; /*0=haut/bas et 20px droite/gauche*/
+    border: 1px solid #000;
+    width: 300px;
+    /*height: 500px;a eviter ou rarement employer*/
+}
+
+/* identifiant*/
+#neo{
+    color: #795a43;
+    font-size: 3rem;
+    background-color: #cbe395;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
