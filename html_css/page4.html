@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> test formulaires </title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> test formulaires </title>
+    </head>
 
-<body>
-    <from method="post" action="aaaaaa.php">
-        <!-- formulaires
-        input aura toujours un name
-        id permet de lier input avec le label-->
-        <label for="nom"> Nom :</label>
-        <input id="nom" type="text" name="nom" /><br/><br/><br/>
-        
-        <label for="prénom"> Prénom :</label>
-        <input id="prénom" type="text" name="prénom" /><br/><br/><br/>
-        
-        <label for="mdp"> Mot de passe :</label>
-        <input id="mdp" type="password" name="news" /><br/><br/><br/>
-        
-        <label for="newsOUI"> 
-        <input id="newsOUI" type="checkbox" name="newsOUI" checked="checked" value="oui" />       
-        Je ne souhaite pas recevoir de newsletter</label><br/><br/><br/>
-        
-        <!-- bouton radio -->
-        <label> Votre système d'exploitation est :</label><br/><br/>
-        
-        <input id="W" type="radio" name="syst" value="W" /><label for="W">Windows</label><br/> 
-        
-        <input id="M" type="radio" name="syst" value="M" /><label for="M">Mac os</label><br/>
-        
-        <input id="L" type="radio" name="syst" value="L" /><label for="L">Linux</label><br/><br/><br/>
-        
-        <input type="submit" name="envoyer" value="Envoyer"/>
-        
-        
-        
-        
+    <body>
+        <fieldset>
+            <legend ali="top"> Mon formulaire </legend><br/><br/><br/>
+            <form method="post" action="aaaaaa.php">
+                <!-- formulaires input aura toujours un name;id permet de lier input avec le label-->
 
-    </from>
-    
-    
-  
-</body>
+                <label for="nom"> Nom :</label>        
+                <input id="nom" type="text" name="nom" size="30" maxlength="10" placeholder="Entrez votre nom" required="required"/><br/><br/><br/>
+
+                <label for="prénom"> Prénom :</label>
+                <input id="prénom" type="text" name="prénom" placeholder="Entrez votre prénom" /><br/><br/><br/>
+
+                <label for="mdp"> Mot de passe :</label>
+                <input id="mdp" type="password" name="news" /><br/><br/><br/>
+
+                <label for="newsOUI"> 
+                    <input id="newsOUI" type="checkbox" name="newsOUI" checked="checked" value="oui" />       
+                    Je ne souhaite pas recevoir de newsletter</label><br/><br/><br/>
+
+                <!-- bouton radio -->
+                <label> Votre système d'exploitation est :</label><br/><br/>
+
+                <input id="W" type="radio" name="syst" value="W" /><label for="W">Windows</label><br/> 
+
+                <input id="M" type="radio" name="syst" value="M" /><label for="M">Mac os</label><br/>
+
+                <input id="L" type="radio" name="syst" value="L" /><label for="L">Linux</label><br/><br/><br/>
+
+                <label for="nombre"> Nombre </label>
+                <input id="nombre" type="number" min="0" max="50" name="nombre"/><br/><br/><br/>
+
+                <label for="phone"> Système utilisé sur votre smartphone : </label> 
+                <select id="phone" name="phone" multiple="multiple" >
+                    <option value="ios"> IOS </option>
+                    <option value="android"> Android </option>
+                    <option value="windows"> Windows phone </option>
+                    <option value="ios"> IOS </option>
+                    <option value="android"> Android </option>
+                    <option value="windows"> Windows phone </option>
+                    <option value="ios"> IOS </option>
+                    <option value="android"> Android </option>
+                    <option value="windows"> Windows phone </option>
+                </select><br/><br/><br/>
+
+                <label for="commentaires"> Saisissez vos commentaires : </label><br/><b/>
+                <textarea id="comentaires" name="commentaires" cols="50" rows="10" ></textarea><br/><br/><br/>
+
+                <input type="submit" name="envoyer" value="Envoyer"/>
+
+
+
+
+
+            </form>
+
+        </fieldset>        
+
+
+
+    </body>
 </html>
 

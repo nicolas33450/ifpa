@@ -1,0 +1,20 @@
+p, h2 {
+    color: #00f;
+}
+
+h1 {
+    color: #f00;
+    font-size: 6rem;
+    
+}
+
+.rouge {
+    color: #f00;
+}
+
+.roi{
+    font-size: 2rem;
+    color: #0f0;
+    font-weight: bolder;
+}
+
