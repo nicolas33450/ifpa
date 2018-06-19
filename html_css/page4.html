@@ -3,10 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Page 4 </title>
+  <title> test formulaires </title>
 </head>
 
 <body>
+    <from method="post" action="aaaaaa.php">
+        <!-- formulaires
+        input aura toujours un name
+        id permet de lier input avec le label-->
+        <label for="nom"> Nom :</label>
+        <input id="nom" type="text" name="nom" /><br/><br/><br/>
+        
+        <label for="prénom"> Prénom :</label>
+        <input id="prénom" type="text" name="prénom" /><br/><br/><br/>
+        
+        <label for="mdp"> Mot de passe :</label>
+        <input id="mdp" type="password" name="news" /><br/><br/><br/>
+        
+        <label for="newsOUI"> 
+        <input id="newsOUI" type="checkbox" name="newsOUI" checked="checked" value="oui" />       
+        Je ne souhaite pas recevoir de newsletter</label><br/><br/><br/>
+        
+        <!-- bouton radio -->
+        <label> Votre système d'exploitation est :</label><br/><br/>
+        
+        <input id="W" type="radio" name="syst" value="W" /><label for="W">Windows</label><br/> 
+        
+        <input id="M" type="radio" name="syst" value="M" /><label for="M">Mac os</label><br/>
+        
+        <input id="L" type="radio" name="syst" value="L" /><label for="L">Linux</label><br/><br/><br/>
+        
+        <input type="submit" name="envoyer" value="Envoyer"/>
+        
+        
+        
+        
+
+    </from>
+    
+    
   
 </body>
 </html>
