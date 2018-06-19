@@ -36,7 +36,7 @@ h1 {
     border-radius: 50px;
 }
 
-.image{s
+.image{
     border: 3px solid #000;
     background-color: #ed325d;
    /* margin-top: 50px;
@@ -44,18 +44,28 @@ h1 {
     margin-right: 50px;
     margin-bottom: 50px;
     margin: 50px 50px 50px 50px;*/
-    margin: 40px 60px; /*marge exterieure*/
-    padding: 60px; /*marge interieure*/
+    /* margin: 10px 20px 58px; haut droite gauche bas*/
+    margin: 40px 60px; /*marge exterieure : haut bas */
+    padding: 60px; /*marge interieure 4 cotes */
 }
 
 .gaulois{
     text-align: left;
     padding: 0 20px; /*0=haut/bas et 20px droite/gauche*/
-    border: 1px solid #000;
+    border: 4px solid #000;
     width: 300px;
     /*height: 500px;a eviter ou rarement employer*/
 }
 
+.zonex{
+    border: 4px solid #000;
+    width: 300px;
+    height: 300px;
+    position: absolute; /*position coin superieur gauche du body*/
+    left: 800px;
+    top: 300px;
+        
+}
 /* identifiant*/
 #neo{
     color: #795a43;
