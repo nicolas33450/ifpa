@@ -13,7 +13,7 @@
 
 .dossier{
     background-color: aqua;    
-    float: left;
+    /*float: left;*/
 }
 
 
@@ -34,6 +34,7 @@
 
 .menu1{
     background-color: #cb7093;
+    height: 400px;
     
 }
 
@@ -44,12 +45,19 @@
 
 .contenu{
     background-color: crimson;
-    color: chartreuse;
+    color: #ffffff;
     text-align: center;
     width: 75%;
     float: left;
-    /*padding: 20px;*/
+    height: 800px;
     font-size: 3rem;
+}
+
+.toto{
+    width: 250px;
+    height: 200px;
+    border: 2px solid #ffffff;
+    margin: 10px auto;
 }
 
 .pied{
