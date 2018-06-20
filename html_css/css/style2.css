@@ -1,0 +1,44 @@
+* {
+    padding: 0; /*reset css*/
+    margin: 0;
+}
+
+.body{
+    background-color: #141412;
+    font-size: 3rem;
+}
+.entete{
+    background-color: #110ac6;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3rem;
+    
+}
+
+.menu{
+    color: darkmagenta;
+    background-color: aqua;
+    text-align: center;
+    width: 25%;
+    float: left;
+    
+}
+
+
+.contenu{
+    background-color: crimson;
+    color: chartreuse;
+    text-align: center;
+    width: 75%;
+    float: left;
+}
+
+
+
+.footer{
+    background-color: #73843b;
+    text-align:center;
+    font-size: 3rem;
+    clear: both;
+
+}

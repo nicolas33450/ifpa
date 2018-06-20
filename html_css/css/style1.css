@@ -1,3 +1,14 @@
+@font-face{
+    font-family: 'caesar';
+    src: url('polices/caesar.ttf');
+}
+
+
+body{    
+    font-family: 'caesar';
+}
+
+
 p, h2 {
     color: #00f;
 }
@@ -81,7 +92,7 @@ h1 {
 
 }
 
-section > div > div > div >p{
+section > p{ /* changement sur 3 niveaux */
     color: #0b830f;
     font-weight: bolder;
 }
