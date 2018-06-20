@@ -1,0 +1,55 @@
+* { /*reset css*/
+    box-sizing: border-box;/* inclus bordure et padding*/
+    padding: 0; 
+    margin: 0;
+}
+
+.entete{
+    background-color: #110ac6;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 3rem;    
+    
+}
+
+.col1, .col2, .col3, .col4 {   
+    text-align.: center;
+    width: 25%;
+    float: left; /*sort du flux normal*/
+    padding: 20px;
+    font-size: 2rem;
+        
+}
+
+.col1{
+    color: #000;
+    background-color: aqua;
+}
+
+.col2{
+    color: #000;
+    background-color: #c10b97;
+   
+        
+}
+
+.col3{
+    color: #000;
+    background-color: #216711;
+   
+        
+}
+
+.col4{
+    color: #000f;
+    background-color: #582a0e;
+    
+        
+}
+
+
+.pied{
+    background-color: #73843b;
+    text-align:center;
+    font-size: 2rem;
+}

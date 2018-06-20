@@ -4,34 +4,43 @@
     margin: 0;
 }
 
-
-
-.ligne1{
-    background-color: #ed18ed;
-    
-}
-
-
 .entete{
     background-color: #110ac6;
     text-align: center;
     color: antiquewhite;
+    font-size: 2rem;
+}
+
+.dossier{
+    background-color: aqua;    
+    float: left;
+}
+
+
+.menux{
+    background-color: aqua;
+    float: left;
+    width: 25%;
+}
+
+
+.menu1, .menu2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
     font-size: 3rem;
+}
+
+
+.menu1{
+    background-color: #cb7093;
     
 }
 
-
-.menu{
-    color: darkmagenta;
+.menu2{
     background-color: aqua;
-    text-align: center;
-    width: 25%;
-    float: left; /*sort du flux normal*/
-    padding: 20px;
-    font-size: 3rem;
-        
-}
 
+}
 
 .contenu{
     background-color: crimson;
@@ -39,13 +48,11 @@
     text-align: center;
     width: 75%;
     float: left;
-    padding: 20px;
+    /*padding: 20px;*/
     font-size: 3rem;
 }
 
-
-
-.footer{
+.pied{
     background-color: #73843b;
     text-align:center;
     font-size: 3rem;
@@ -55,5 +62,4 @@
 .cls{
     clear: both;
 }
-
 
