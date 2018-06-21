@@ -1,0 +1,27 @@
+* { /*reset css*/
+    box-sizing: border-box;/* inclus bordure et padding*/
+    padding: 0; 
+    margin: 0;
+}
+
+.fl1{
+    display: flex;
+}
+
+
+
+
+.z1, .z2, .z3{
+    width: 250px;
+    height: 150px;
+    background-color: #f00;
+}
+
+.z2{
+    background-color: #0f0;
+}
+
+
+.z3{
+    background-color: #00f  ;
+}
