@@ -4,6 +4,21 @@
     margin: 0;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: #7e5013;
+}
+
+.corps div:first-letter {
+    font-size: 5rem;
+    color: #ad122a;
+}
+
 .entete{
     display: flex;
     flex-direction: row;  /* row =ligne column=colonne */
@@ -11,20 +26,21 @@
     justify-content: space-between;
     align-items: center;     /* axe secondaire */
     flex-wrap: wrap;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
    
 }
 
 
 .m1, .m2, .m3, .m4{
     flex: 1;    
-    width: 250px;  
-    height: 150px;
+    /*width: 250px;  
+    height: 150px;*/
     background-color: #112771;
     color: #ffffff;
     /*border: 1px solid #000;*/
-    align-items: center;
+    /*align-items: center;*/
     font-size: 3rem;
+    margin: 0px auto;
      
 }
 
@@ -32,8 +48,7 @@
 .corps{
     /*display: flex;*/
     /*border: 1px solid #000;*/
-    width: 700px;
-    height: 700px;
+    width: 700px;    
     /*background-color: aqua;*/
     margin: 10px auto;
 }
@@ -81,18 +96,75 @@
     color: #fff;
 }
 
-
-
-.zoneimage, .zonetexte{
-    width: 50%;
-    /*float: left;*/
-}
-
 .cls{
     clear: both;
 }
 
 
+
+.zoneimage, .zonetexte{
+    width: 50%;
+    float: left;
+}
+
+
+
+.zoneimage img, .zoneimage2 img{
+    width: 100%; /* redimensionner image */
+    height: auto;
+}
+
+
+.ligne5{
+    width: 1200px;
+    height: 600px;
+    /*background-color: chocolate;*/
+    margin: 20px auto;
+}
+
+
+.zoneimage2, .zonetexte2{
+    width: 50%;
+    float: left;
+}
+
+
+.zoneimage2 img{
+    width: 100%; /* redimensionner image */
+    float: left;
+}
+.zoneimage2{
+    position: relative;
+   
+    
+}
+
+
+.message{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: #4f6060;
+    opacity: 0.7;
+    transition-duration: 1s; 
+}
+
+.message:hover{
+    opacity: 0;
+}
+
+.zonetexte2:hover{
+    color: crimson;
+    font-size: 2rem;
+    
+}
+
+.zonetexte2{
+    transition: color 1s;
+    transition: font-size 4s;
+}
 
 
 
