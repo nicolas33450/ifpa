@@ -1,0 +1,114 @@
+* { /*reset css*/
+    box-sizing: border-box;/* inclus bordure et padding*/
+    padding: 0; 
+    margin: 0;
+}
+
+.entete{
+    display: flex;
+    flex-direction: row;  /* row =ligne column=colonne */
+    /*height: 800px;*/    
+    justify-content: space-between;
+    align-items: center;     /* axe secondaire */
+    flex-wrap: wrap;
+    border: 1px solid #000;
+   
+}
+
+
+.m1, .m2, .m3, .m4{
+    flex: 1;    
+    width: 250px;  
+    height: 150px;
+    background-color: #112771;
+    color: #ffffff;
+    /*border: 1px solid #000;*/
+    align-items: center;
+    font-size: 3rem;
+     
+}
+
+
+.corps{
+    /*display: flex;*/
+    /*border: 1px solid #000;*/
+    width: 700px;
+    height: 700px;
+    /*background-color: aqua;*/
+    margin: 10px auto;
+}
+
+
+.ligne1{
+    display: flex;
+    padding: 20px;
+}
+
+.photo1, .texte1{
+    /*border: 1px solid #000;*/
+    
+}
+
+
+.ligne2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    
+    
+}
+
+.texte2, .photo2, .texte3{
+    /*border: 1px solid #000;*/
+    
+}
+
+.ligne3{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.texte4, .photo3{
+    /*border: 1px solid #000;*/
+}
+
+.pied{
+    background-color: #000;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+
+.zoneimage, .zonetexte{
+    width: 50%;
+    /*float: left;*/
+}
+
+.cls{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,22 +6,44 @@
 
 .fl1{
     display: flex;
-}
+    flex-direction: row;  /* row =ligne column=colonne */
+    /*height: 800px;*/
+    border: 2px solid #000;
+    /*justify-content: space-between;*/ /* axe principal */
+    align-items: center;     /* axe secondaire */
+    flex-wrap: wrap;
+} 
 
 
 
 
-.z1, .z2, .z3{
+
+.z1, .z2, .z3, .z4{
+    flex: 1;    
     width: 250px;
     height: 150px;
     background-color: #f00;
+    color: #ffffff;
+    order: 4; /* ordre dans la ligne */
 }
 
 .z2{
-    background-color: #0f0;
+    background-color: #6a6308;
+    /*flex: 3;  agrandi 3 fois par rapport a z1 z3 z4 */
+    order: 3; /* ordre dans la ligne */
 }
 
 
 .z3{
-    background-color: #00f  ;
+    background-color: #00f;
+    order: 1; /* ordre dans la ligne */
 }
+
+
+.z4{
+    background-color: #086d6d;
+    order: 2; /* ordre dans la ligne */
+}
+
+
+
