@@ -59,6 +59,7 @@ a:hover{
     padding: 20px;
     background-image: url(../image/changer-fond-ecran-windows_01.jpg);
     background-position: left center;
+    background-repeat: no-repeat; /* pas de repetition de l'image*/
 }
 
 .photo1, .texte1{
