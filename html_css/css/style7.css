@@ -57,6 +57,8 @@ a:hover{
 .ligne1{
     display: flex;
     padding: 20px;
+    background-image: url(../image/changer-fond-ecran-windows_01.jpg);
+    background-position: left center;
 }
 
 .photo1, .texte1{

@@ -1,0 +1,241 @@
+* { /*reset css*/
+    box-sizing: border-box;/* inclus bordure et padding*/
+    padding: 0; 
+    margin: 0;
+}
+
+/********************************************************************************************************
+page smartphone
+********************************************************************************************************/
+
+.entete{    
+    background-color: #528911;
+    text-align: center;
+    font-size: 1rem;
+    height: 29px;
+    
+}
+
+
+/*.menu1 li{
+    display: block;
+    float: left;
+    width: 150px;
+    padding: 0 15px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.menu1 li:hover{
+    background-color: #8ebce3;
+}
+
+li{
+    margin-right: 4px;
+}*/
+
+/*.menu1{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;    
+    
+}
+
+.menu1 li{
+    background-color: aqua;
+    list-style-type: none;
+}
+
+.menu1 li:hover{
+    background-color: coral;
+}
+
+.menu1 li a{
+    text-decoration: none;
+    color: crimson;
+}*/
+
+#menu {
+	list-style: none;
+	list-style-type: none;
+}
+
+#menu ul {
+	background-color: #fab761;
+    list-style-type: none;
+    display: none;   /* tout les menus sous ul  ne s'affichent pas */                   
+	position: absolute;
+}
+
+
+#menu li {
+	position: relative;
+	float: left;                        
+}
+
+#menu li.actif {
+	background: #ddd;
+}
+
+
+#menu li:hover {
+	background: #f6f6f6                 
+}
+
+
+#menu li a {
+	text-decoration: none;              
+	padding: 0 15px;
+    color: #000;                        
+	font-weight: bold;
+	font-size: .8rem;
+	line-height: 1.8rem;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+#menu ul li a {
+	text-decoration: none; 
+}
+
+
+#menu li:hover > ul {
+	display: block;   /* enfant direct de li*/                 
+}
+
+
+#menu ul li {
+	float: none;                        
+	width: 180px;                       
+
+}
+
+#menu ul ul {
+	background-color: #95fcd8;
+	top: 0;                             
+	left: 100%;                         
+}
+
+
+
+.cls{
+    clear: both;
+}
+
+
+a:link{
+    color: coral;
+} 
+
+a:visited{
+    color: deeppink;
+
+}
+a:hover{
+    color: #4b1605;
+}
+
+.menu{
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.contenu{
+    background-color: darkorange;
+    text-align: center;
+}
+
+.contenu1{
+    background-color: #5f5346;
+    text-align: center;    
+}
+
+.contenu2{
+    background-color: #7a80c6;
+    text-align: center;
+}
+
+.pied{
+    background-color: #b56565;
+    text-align: center;
+}
+
+/********************************************************************************************************
+MEDIA QUERIES
+*********************************************************************************************************/
+
+@media screen and (min-width: 576px) and (max-width: 1199px){
+
+    .menu{
+        float: left;
+        width: 49%;        
+        margin-right: 1%;
+
+
+    }
+
+    .contenu{
+        float: left;
+        width: 50%;      
+
+    }
+
+    .contenu1{
+        float: left;
+        width: 49%;        
+        margin-right: 1%;        
+
+    }
+
+    .contenu2{
+        float: left;
+        width: 50%;        
+        overflow: hidden;
+
+    }
+
+
+
+    .pied{
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu, .contenu, .contenu1, .contenu2{
+        height: 600px;
+    }
+
+    .menu{
+        float: left;
+        width: 24%;        
+        margin-right: 1%;
+
+    }
+
+    .contenu{
+        float: left;
+        width: 24%;        
+        margin-right: 1%;
+
+    }
+
+    .contenu1{
+        float: left;
+        width: 24%;        
+        margin-right: 1%;
+
+    }
+
+    .contenu2{
+        float: left;
+        width: 25%;
+
+
+    }
+
+
+
+    .pied{
+        clear: both;
+    }
+}
