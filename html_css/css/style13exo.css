@@ -1,0 +1,51 @@
+.w-100{
+    width: 100%;
+    
+}
+
+.tiers{
+    width: 33%;
+    float: left;
+}
+.row{
+    clear: both;
+}
+.logo, .menu{
+    float: left;
+    width: 200px;
+}
+.menu{
+    width: calc(100% - 200px);
+    display: flex;
+    height: 160px;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+a{
+    color: coral;
+}
+.tiers h2{
+    text-align: center;
+    color: darkslategrey;
+}
+.deuxtiers{
+    float: left;
+    width: 67%;
+}
+
+@media screen and (max-width:768px){
+    
+    .tiers, .deuxtiers, .menu, .logo{
+        width: 100%;
+    }
+    
+    .logo{
+        text-align: center;
+    }
+    
+    .logo img{
+        width: auto;
+    }
+}

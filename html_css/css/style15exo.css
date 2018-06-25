@@ -1,0 +1,89 @@
+.w-100{
+    width: 100%;
+}
+
+.row{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.com1, .com2{
+    float: left;
+    width: 16%;
+}
+
+.com3{
+    float:left;
+    width: 16%;
+}
+
+.com4{
+    float: left;
+    width: 50%;
+}
+
+.bijoux1, .bijoux2, .bijoux3{
+    float: left;
+    width: 33%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.voir{
+    background-color: crimson;
+    margin-left: 350px;
+    margin-right: 350px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.commandez{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    
+    .com4{
+        display: none;
+    }
+    
+    .com1, .com2, com3{
+        width: 33%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

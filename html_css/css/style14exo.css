@@ -1,0 +1,46 @@
+.w-100{
+    width: 100%;
+}
+
+.tiers{
+    float: left;
+    width: 33%;
+}
+.tiers h2{
+    text-align: center;
+}
+.tiersdeux{
+    float: left;
+    width: 65%;
+}
+
+.row{
+    clear: both;
+}
+
+.logo{
+    float: left;
+    width: 250px;
+}
+
+.menu{
+    width: calc(100% - 250px);
+    display: flex;
+    height: 190px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width:768px){
+    
+    .tiers, .tiersdeux, .logo, .menu{
+        width: 100%;
+  
+    }
+    .logo img{
+        width: auto;
+    }
+    
+    
+}
