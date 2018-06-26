@@ -1,0 +1,31 @@
+.w-100{
+    width: 100%;
+}
+
+
+.jupiter{
+    background: url(../image/jupapr3color-jd-170304_0.png) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+}
+
+.world{
+    background: url(../image/habitableworlds2017_wide.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    
+}
+
+.world2{
+    background: url(../image/habitableworlds2017_wide.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    
+}
+
+.world3{
+    background: url(../image/afrc2017-0258-38.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    
+}
