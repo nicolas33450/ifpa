@@ -4,7 +4,8 @@
 
 h6{
     font-weight: bold;
-    color: #ff0000;   
+    color: #ff0000;  
+    padding: 4px;
 }
 
 h3{
@@ -20,4 +21,9 @@ h3{
     div{
         width: 100%;
     }
+}
+
+.duree{
+    font-size: 1rem;
+    color: grey;
 }
