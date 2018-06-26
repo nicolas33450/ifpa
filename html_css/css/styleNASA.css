@@ -13,19 +13,112 @@
     background: url(../image/habitableworlds2017_wide.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
-    
+
 }
 
 .world2{
-    background: url(../image/habitableworlds2017_wide.jpg) no-repeat center center;
+    background: url(../image/logonasa.png) no-repeat center center;
     background-size: cover;
     height: 300px;
-    
+
 }
 
 .world3{
     background: url(../image/afrc2017-0258-38.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
-    
+
 }
+
+.bot {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    transition: all ease 1s;
+    cursor: pointer;
+
+}
+
+.bot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bot2 {
+    background-color: #49abd0;
+    position: absolute;
+    bottom: 40px;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+
+.bot2:hover {
+    background-color: #d3a765;
+}
+
+.charon{
+    background: url(../image/charon_then_now.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.hall{
+    background: url(../image/hallthruster-plume.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+.jupap{
+    background: url(../image/jupapr3color-jd-170304_0.png) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.dragon{
+    background: url(../image/dragon-2-in-tvac.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.skylab{
+    background: url(../image/skylab_command_module.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+.pia{
+    background: url(../image/pia22424.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+
+.tracy{
+    background: url(../image/tracy-heilprin_main_labeled_.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
