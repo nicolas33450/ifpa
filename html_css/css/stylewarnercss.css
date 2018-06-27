@@ -8,11 +8,66 @@ h1{
     background: url(../image/warner/header_foreground.png) no-repeat center center;
     background-size: cover;
     height: 290px;
+    margin: 8px 0;
+    
 }
 
 .header_background{
     background: url(../image/warner/header_background.jpg) no-repeat center center;
     background-size: cover;
     height: 290px;
+    margin: 8px 0;
 }
+#btn1{
+    position: absolute;
+    bottom: 350px;
+    left: 50px;
+    border-radius: 10px;
+}
+
+#btn2{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    border-radius: 10px;
+}
+
+#btn3{
+    position: absolute;
+    bottom: 50px;
+    left: 450px;
+    border-radius: 10px;
+}
+
+#btn4{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
