@@ -13,17 +13,33 @@ h3{
     color: #000;
 }
 
-/*div{
-    border: 0.5px solid grey;
-}*/
+.reseau{
+    position: fixed;
+    right: 5px;
+    top: 40vh;
+}
+
+.reseau img{
+    width: 50px;
+    margin: 5px 0;
+
+}
 
 @media screen and (max-width:576px){
     div{
         width: 100%;
     }
+    .duree{
+        font-size: 1rem;
+        color: grey;
+    }
+
+    .reseau{
+        display: flex;
+        position: static;
+        justify-content: space-around;
+    }
+
 }
 
-.duree{
-    font-size: 1rem;
-    color: grey;
-}
+
