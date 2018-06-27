@@ -1,0 +1,17 @@
+{% verbatim %}
+<div class="container">
+  <div class="row" id="cible">
+{{#produits}}
+  <div class="col-12 col-md-3">
+    <img src="{{ image_path.0.url }}" class="w-100"/>
+    {{name}}
+<a href="app_dev.php/produit/{{id}}">    <!--  NOTE : Enlever app_dev.php -->
+      <button class="btn btn-primary">
+        En savoir plus
+      </button>
+  </a>
+  </div>
+{{/produits}}
+  </div>
+</div>
+{% endverbatim %}
