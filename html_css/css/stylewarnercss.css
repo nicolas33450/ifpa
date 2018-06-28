@@ -3,13 +3,40 @@ h1{
     font-size: 3rem;
 }
 
+p{
+    color: #fff;
+}
+.warner img{
+   /* background: url(../image/warner/logowarner.jpg) no-repeat center center;
+    background-size: contain;
+    height: 60px*/
+    width: 70px;
+    height: auto;
+}
+
+.dc img{
+  /*  background: url(../image/warner/header__logo--dc.png) no-repeat center center;
+   background-size: contain;
+    height: 60px; */
+    width: 70px;
+    height: auto;
+}
+
+.wizard img{
+ /*   background: url(../image/warner/header__logo--lmds.png) no-repeat center center;
+    background-size: contain;
+    height: 60px; */
+    width: 70px;
+    height: auto;
+}
+
 
 .header_foreground{
     background: url(../image/warner/header_foreground.png) no-repeat center center;
     background-size: cover;
     height: 290px;
     margin: 8px 0;
-    
+
 }
 
 .header_background{
@@ -21,29 +48,40 @@ h1{
 #btn1{
     position: absolute;
     bottom: 350px;
-    left: 50px;
+    left: 30px;
     border-radius: 10px;
+    width: 70%;
+    
 }
 
 #btn2{
     position: absolute;
     bottom: 50px;
-    left: 50px;
+    left: 30px;
     border-radius: 10px;
 }
 
 #btn3{
     position: absolute;
-    bottom: 50px;
-    left: 450px;
+    bottom: 30px;
+    left: 90px;
     border-radius: 10px;
 }
 
 #btn4{
     position: absolute;
-    bottom: 50px;
+    bottom: 150px;
     left: 100px;
     border-radius: 10px;
+}
+
+#btn5{
+    float: right;
+   
+}
+
+.fas{
+    color: #fff;
 }
 
 
