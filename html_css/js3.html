@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> javascript </title>
+    </head>
+
+    <body>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+
+            var nb = window.prompt('Veuillez entrez le nombre de sommets de la forme géomatrique (entre 1 et 6)');
+            
+            //convertir en entier une chaine de caractere
+            nb = Number.parseInt(nb);
+
+            switch(nb)
+
+            { 
+                case 3 : 
+                    window.alert('Votre forme est un triangle');
+                    break;
+                case 4:
+                    window.alert('Votre forme est un carré');
+                    break;
+                case 5:
+                    window.alert('Votre forme est un pentagone');
+                    break;
+                case 6:
+                    window.alert('votre figure est un hexagone');
+                    break;
+                default:
+                    window.alert('votre forme n\'est pas répertorié');
+   
+            } 
+
+
+        </script>
+
+
+
+    </body>
+</html>

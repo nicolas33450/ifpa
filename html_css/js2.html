@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> javascript </title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+            var d = new Date();
+            window.alert('date : ' + d);
+
+            var heure = d.getHours();
+            window.alert('heure : ' + heure);
+
+
+            if ((heure >= 6) && (heure <= 12))
+            {
+                window.alert('Bonne matinée');
+            }
+            else if ((heure > 12) && (heure <= 18))
+            {
+                window.alert('Bonne après-midi');
+            }
+            else if ((heure >18) && (heure <=23))
+            {
+                window.alert('Bonne soirée');
+            }
+            else
+            {
+                window.alert('bonne nuit');
+            }
+
+
+            // expression conditionnelle
+            var x = 2; 
+            (x>=4)? y=8:y=10;
+            window.alert('y = ' + y)
+
+
+
+            var rep = window.prompt('Veuillez saisir un nombre entre 1 et 5');
+            switch (rep)
+            {
+                case '1':
+                    window.alert('vous avez saisi un');
+                    break;
+                case '2':
+                    window.alert('vous avez saisi deux');
+                    break;
+                case '3':
+                    window.alert('vous avez saisi trois');
+                    brek;
+                case '4':
+                    window.alert('vous avez saisi quatre');
+                    break;
+                case '5':
+                    window.alert('vous avez saisi cinq');
+                    break
+                default:
+                window.alert('On vous a dit un nombre entre 1 e 5 !!!!');
+                    break;
+            }
+
+
+        </script>  
+
+    </body>
+</html>
