@@ -59,32 +59,57 @@
             }while(zeroInversion==false);
 
             console.log(tab1);
-            
+
             console.log('------------------------------------------------');
 
-            
+
             var tab1 = [24, 33, 47, 64, 17, 16];
             var i=0;
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            var plusGrand = 0;
+            var passage = 0;
+            var x = 5;
+
+
+            while (passage <= 5)
+            { 
+
+                for ( i =0; i<5; i++) 
+                {  
+
+                    if (tab1[i] > tab1[i+1])
+                    { 
+
+                        plusGrand = tab1[i];
+
+                        tab1[i] = tab1[x];
+
+                        tab1[x] = plusGrand;
+
+                        x = x-1;         
+
+                    }
+
+                }  passage ++;
+            }
+
+
+            console.log(tab1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </script>
 
