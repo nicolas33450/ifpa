@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> boucles </title>
+    </head>
+
+    <body>
+
+
+
+
+        <script>
+
+            var somme = 0;
+            var i = 0;
+            while(i<10)
+            {
+                if (i==9)
+                {
+                    break;// sorti de boucle si i=9
+                }
+                i++;
+                if(i==5)
+                {
+                    continue;
+                }
+                somme +=i;               
+
+            }
+            console.log('somme = ' + somme);
+
+            console.log('------------------------------------------------');
+
+
+            var tab1 = [24, 33, 47, 64, 17, 16];
+            var zeroInversion=true;
+            var i=0;
+
+            do 
+            {                
+                zeroInversion = true;
+                i=0;
+                while(  i< 5 )
+                { 
+                    if(tab1[i] > tab1[i+1])
+                    {  
+                        temp = tab1[i];
+                        tab1[i] = tab1[i+1];
+                        tab1[i+1] = temp;
+                        zeroInversion=false;
+
+                    }
+                    i++;
+                }
+            }while(zeroInversion==false);
+
+            console.log(tab1);
+
+
+        </script>
+
+
+
+    </body>
+</html>
