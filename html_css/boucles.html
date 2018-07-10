@@ -95,6 +95,76 @@
 
             console.log(tab1);
 
+            console.log('------------------------------------------------');
+
+
+            var tab1 = [24, 33, 47, 64, 17, 16];
+            var i = 0;
+            var plusGrand = 0;
+            var passage = 0;
+            var longueurtab = tab1.length;
+
+
+            do
+            {
+                i =0;
+                plusGrand = 0;
+                pos = 0;
+
+                //trouver le plus grand de la ligne
+
+                while ( i < (longueurtab - passage))
+                {
+                    if (tab1[i] > plusGrand)
+                    {
+                        plusGrand = tab1[i] ;
+                        pos = i;
+
+                    } i++;
+                }
+
+                passage++;
+
+                temp = tab1[ longueurtab - passage];
+                tab1[ longueurtab -passage] = tab1[pos];
+                tab1[pos] = temp;
+
+            }while (passage < longueurtab);
+
+
+
+            console.log(tab1);
+
+
+            console.log('------------------------------------------------');
+
+
+
+            for (k = 0; k < longueurtab; k++)
+            {
+
+                i =0;
+                plusGrand = 0;
+                pos = 0;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
