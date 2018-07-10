@@ -7,22 +7,99 @@
     </head>
 
     <body>
-        TEST DES FONCTIONS<br/>
+        * TEST DES FONCTIONS * <br/>
 
         <div id="div1"></div>
+
+        <form>
+            <label for="nb1"></label>        
+            <input type="text" name="nb1" id="nb1">
+
+            <label for="nb2"></label>        
+            <input type="text" name="nb2" id="nb2">
+
+            <label for="nb3"></label>
+            <input type="text" name="nb3" id="nb3">
+
+            <label for="nb4"> = </label>
+            <input type="text" name="nb4" id="nb4"><br/>
+
+            <input type="button" name="button" id="button" value="Calculer">
+            <input type="button" name="vider" id="vider" value="vider">
+
+
+
+
+        </form>
 
 
 
 
         <script>
-            function bonjour(prenom) {
-                document.getElementById('div1').innerHTML += '<br/> Bonjour ' + prenom;
-            }
-            bonjour('nico');
+
+            function somme(a, b){
+                var total = a + b;
+                document.getElementById('nb4').value = total};
+
+
+            function soust(a, b){
+                var total = a - b;
+                document.getElementById('nb4').value = total };
+
+
+            function multi(a, b){
+                var total = a * b;
+                document.getElementById('nb4').value = total };
+
+
+            function divi(a, b){
+                var total = a / b;                
+                document.getElementById('nb4').value = total };
             
-            var toto = 'jean';
             
-            bonjour(toto);
+            
+            document.getElementById('vider').onclick = function(){
+                 document.getElementById('nb1').value = null;
+                 document.getElementById('nb2').value = null;
+                 document.getElementById('nb3').value = null;
+                 document.getElementById('nb4').value = null;
+            };
+            
+
+            document.getElementById('button').onclick = function(){
+                var n1 = Number.parseInt(document.getElementById('nb1').value);
+                var n2 = Number.parseInt(document.getElementById('nb3').value);
+                var n3 = document.getElementById('nb2').value;
+
+                /* somme( n1, n2);
+                soust( n1, n2);
+                multi( n1, n2);
+                divi( n1, n2);*/
+
+
+
+                switch(n3)
+
+                {
+                    case '+' :
+                        somme( n1, n2);
+                        break;
+                    case '-' :
+                        soust( n1, n2);
+                        break;
+                    case '*' : 
+                        multi( n1, n2);
+                        break;
+                    case '/' :
+                        divi( n1, n2);
+                        break;
+                    default:
+                        document.getElementById('nb4').value = 'signe inconnu';
+                }
+
+            };
+
+
 
         </script>
 
