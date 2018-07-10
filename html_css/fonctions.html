@@ -56,27 +56,40 @@
                 var total = a / b;                
                 document.getElementById('nb4').value = total };
             
-            
-            
+
+          /*  function arrondir(nb; n){
+                switch{
+                    case 1 :
+                        multi = 10;
+                        break;
+                    case 2 :
+                        multi = 100;
+                        break;
+                    case 3 :
+                        multi = 1000;
+                        break;
+                    case 4 :
+                        multi = 10000;
+                }
+                res = Math.round( nb * multi) / multi;
+                return res;
+            }
+*/
+
+
+
             document.getElementById('vider').onclick = function(){
-                 document.getElementById('nb1').value = null;
-                 document.getElementById('nb2').value = null;
-                 document.getElementById('nb3').value = null;
-                 document.getElementById('nb4').value = null;
+                document.getElementById('nb1').value = null;
+                document.getElementById('nb2').value = null;
+                document.getElementById('nb3').value = null;
+                document.getElementById('nb4').value = null;
             };
-            
+
 
             document.getElementById('button').onclick = function(){
                 var n1 = Number.parseInt(document.getElementById('nb1').value);
                 var n2 = Number.parseInt(document.getElementById('nb3').value);
                 var n3 = document.getElementById('nb2').value;
-
-                /* somme( n1, n2);
-                soust( n1, n2);
-                multi( n1, n2);
-                divi( n1, n2);*/
-
-
 
                 switch(n3)
 
@@ -98,6 +111,10 @@
                 }
 
             };
+
+
+
+
 
 
 
