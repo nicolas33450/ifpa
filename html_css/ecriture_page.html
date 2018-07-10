@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/ecriture_page.css">
+        <title> ecriture page </title>
+    </head>
+
+    <body>
+
+        <p>
+            Eiusmod eu aute voluptate. Enim ubi excepteur a quorum. Magna eu iudicem, summis 
+            quamquam ea quamquam. Anim nostrud in concursionibus, summis hic nostrud ab enim 
+            iis admodum ex nulla o expetendis sed cillum, te velit instituendarum quo 
+            proident quorum laboris, eu nostrud exquisitaque ea nam magna officia 
+            arbitrantur. A labore nulla ubi commodo ex o appellat si eiusmod o litteris 
+            domesticarum ea incurreret, ut summis familiaritatem. Senserit ipsum ubi tempor 
+            praesentibus non lorem quibusdam et excepteur, fore incididunt sed dolor lorem, 
+            eu quis tamen aut iudicem nam an proident ubi mentitum, admodum te legam e iis 
+            quid adipisicing, est si consectetur.
+        </p>
+
+        <p id="zone1">------</p>
+
+        <p id="zone2">
+            Mandaremus summis irure an culpa. Consequat multos summis pariatur elit. Vidisse 
+            ubi malis cupidatat, sint quamquam admodum. Est nulla probant quamquam. Aut hic 
+            esse singulis an proident cillum summis iudicem duis, proident sed dolore o ubi 
+            ne consectetur, et illum pariatur transferrem a ex laborum de tempor non nam 
+            aliqua philosophari, minim proident non reprehenderit. Fugiat expetendis si 
+            graviterque. Fabulas quem officia arbitror. Si ipsum fugiat ad proident ea sed 
+            lorem cupidatat qui se fugiat commodo, aliquip te quem aliquip.
+        </p>
+
+
+        <script> 
+
+            //objet    //fonction          // propriete
+            /*document.getElementById('zone1').innerHTML = 'IGDSJIOYZEIGICBOHDEIGIGD';*/
+
+            //variante pour additionner du texte 
+            //document.getElementById('zone1').innerHTML += 'IGDSJIOYZEIGICBOHDEIGIGD';
+
+
+            /*
+
+            //anonyme
+            document.getElementById('zone1').innerHTML = 'IGDSJIOYZEIGICBOHDEIGIGD';
+            document.onclick = function(event){
+                var x = event.clientX;
+                var y = event.clientY;
+                /*window.alert(' position souris x : ' + x +  ' y ' + y);
+            };
+                 */
+
+
+            /*
+            document.onmousemove = function (event)
+            {
+                var x = event.clientX;
+                var y = event.clientY;
+                document.getElementById('zone1').innerHTML = 'position de la souris :' + x +  ' y ' + y ;
+            };*/
+
+
+
+            document.getElementById('zone2').onmouseover = function()
+           
+            {
+                document.getElementById('zone1').innerHTML = 'survol du paragraphe'; 
+            }
+            
+
+            document.getElementById('zone2').onmouseout = function()
+           
+            {
+                document.getElementById('zone1').innerHTML = '____'; 
+            }
+
+
+
+
+
+        </script>
+
+    </body>
+</html>
