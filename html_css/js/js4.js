@@ -24,13 +24,7 @@ function changer()
 
     document.getElementById('nb1').value = x + y;*/
 
-    document.getElementById('nb1').value =
-
-        document.getElementById('nb1').value.substr(0,1).toUpperCase() +
-
-         document.getElementById('nb1').value.substr(1,length.value).toLowerCase();
-
-
+    document.getElementById('nb1').value = document.getElementById('nb1').value.substr(0,1).toUpperCase() + document.getElementById('nb1').value.substr(1, /*document.getElementById('nb1').value.length -1*/).toLowerCase();
 
 
 }
