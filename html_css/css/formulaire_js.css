@@ -1,0 +1,18 @@
+* { /*reset css*/
+    box-sizing: border-box;/* inclus bordure et padding*/
+    padding: 0; 
+    margin: 0;
+}
+
+
+
+.form{
+    border: 1px solid #000;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 30px 100px;
+    
+}
+#button{
+    width: 100px;
+}

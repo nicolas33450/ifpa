@@ -27,6 +27,9 @@
             <input type="button" name="button" id="button" value="Calculer">
             <input type="button" name="vider" id="vider" value="vider">
 
+            <label for="nb5"></label>
+            <input type="button" name="nb5" id="nb5"><br/>
+
 
 
 
@@ -55,10 +58,10 @@
             function divi(a, b){
                 var total = a / b;                
                 document.getElementById('nb4').value = total };
-            
 
-          /*  function arrondir(nb; n){
-                switch{
+
+            /*  function arrondir(nb; n){
+                switch(n) {
                     case 1 :
                         multi = 10;
                         break;
@@ -111,6 +114,40 @@
                 }
 
             };
+
+
+
+
+
+            var d = new Date();
+            //window.alert('date : ' + d);
+
+            var a = d.getDay();
+            var b = d.getDate();
+            var c = d.getMonth();
+            var e = d.getFullYear();
+
+
+
+            switch (a)
+            {
+                case 3 :
+                    a = 'mercredi';
+                    break;
+            }
+
+            switch (c)
+            {
+                case 6 :
+                    c = 'juillet';
+                    break;
+            }
+            
+            document.getElementById('nb5').value = a + ' ' + b + ' ' + c + ' ' + e;
+
+            //window.alert('nous sommes le :' + a + ' ' + b + ' ' + c + ' ' + e );
+
+
 
 
 
