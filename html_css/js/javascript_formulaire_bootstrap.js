@@ -10,3 +10,4 @@ document.getElementById('bouton2').onclick = function()
 }
 
 document.getElementById('bouton3').addEventListener('click', afficher);
+
