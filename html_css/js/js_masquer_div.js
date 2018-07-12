@@ -17,7 +17,7 @@ function afficher()
 function jaune()
 {
     document.getElementById('texte2').style.color = '#a8a837';
-   
+
 }
 
 function blanc()
@@ -32,10 +32,21 @@ function change()
     document.getElementById('texte3').classList.add('texte3');
 }
 
-function remove()
+function changer()
 {
-    document.getElementById('texte3').classList.remove('texte3');
+     if (document.getElementById('texte3').classList.contains('txt'))
+    {
+        document.getElementById('texte3').classList.remove('txt');
+    }
+    else 
+    {
+        document.getElementById('texte3').classList.add('txt');
+    }
+     /***** permet de changer pour une seule classe ***********/
+    //document.getElementById('texte3').classList.toggle('txt');
 }
+
+cacher();
 
 
 document.getElementById('btn2').addEventListener('click', cacher);
@@ -46,6 +57,40 @@ document.getElementById('btn3').addEventListener('click', jaune);
 
 document.getElementById('btn4').addEventListener('click', blanc);
 
-document.getElementById('btn5').addEventListener('click', change);
+//document.getElementById('btn5').addEventListener('click', change);
 
-document.getElementById('btn6').addEventListener('click', remove);
+//document.getElementById('btn6').addEventListener('click', remove);
+
+document.getElementById('texte3').addEventListener('click', changer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
