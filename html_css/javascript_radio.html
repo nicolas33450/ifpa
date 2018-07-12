@@ -1,0 +1,46 @@
+ii<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boutons radios</title>
+
+    </head>
+
+    <body>
+        <div>
+            A quelle tranche d'age appartenez-vous ? :
+            <form name="f1">
+                <input id="a30" type="radio" name="age" value="moins de 30 ans"/> <label for="a30">moins de 30 ans</label>
+                <br/>
+                <input id="a55" type="radio" name="age" value="entre 30 et 55 ans"/> <label for="a55">entre 30 et 55 ans</label>
+                <br/>
+                <input id="a56" type="radio" name="age" value="plus de 55 ans"/> <label for="a56">plus de 55 ans</label><br/>
+                <br/>
+                <input type="button" id="b1" name="bouton" value="Vérification"/>
+            </form>
+        </div>
+        <div id="res"></div>
+
+
+
+        <script>
+            function affAge()
+            {
+                var tabRadio=document.getElementsByName('age');
+                var info='Vous n\'avez pas fait de choix';
+
+                for(var i=0;i<tabRadio.length;i++)
+                {
+                    if(tabRadio[i].checked==true)
+                    { 
+                        info='Vous avez '+tabRadio[i].value;break;
+                    }
+                }
+                document.getElementById('res').innerHTML=info;
+            }
+
+
+            document.getElementById('b1').addEventListener('click',affAge);</script>
+    </body>
+</html>

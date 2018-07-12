@@ -35,10 +35,15 @@ document.getElementById('nb1').addEventListener('change', changer);
 {
     
     var tabinfo = document.getElementsByName('nb3');
+<<<<<<< HEAD
     var contenu = tabinfo[0].value;
     
     
     
+=======
+    var contenu = tabinfo[0].value;    
+        
+>>>>>>> 3167d7e719abdaa830dc4b3c02911ccf33903aa2
     window.alert(contenu);
 }
 
