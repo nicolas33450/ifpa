@@ -37,9 +37,10 @@ document.getElementById('nb1').addEventListener('change', changer);
 function recup()
 {
     var tabinfo = document.getElementsByName('nb3');
-    var contenu = tabinfo[0].value;    
+    var contenu = tabinfo[0].value; 
+    console.log(tabinfo[0]);
     
-    window.alert(contenu);
+    //window.alert(contenu);
 }
 
 

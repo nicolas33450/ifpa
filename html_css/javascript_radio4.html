@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boutons radios</title>
+
+    </head>
+
+    <body>
+        <div>
+            Choisissez la couleur de votre voiture ? :<br />
+            <form name="f1">
+                <input id="c1" type="radio" name="couleur" value="blanc"  /> <label for="c1">Blanc</label>
+                <br />
+                <input id="c2" type="radio" name="couleur" value="rouge"  /> <label for="c2">Rouge</label>
+                <br />
+                <input id="c3" type="radio" name="couleur" value="gris"  /> <label for="c3">Gris</label>
+                <br />
+                <input id="c4" type="radio" name="couleur" value="bleu"  /> <label for="c4">Bleu</label>
+                <br />
+                <input id="c5" type="radio" name="couleur" value="noir"  /> <label for="c5">Noir</label>
+                <br /><br />
+
+
+                Choisissez le nombre de portes ? :<br />
+
+                <input id="p1" type="radio" name="porte" value="3 portes"  /> <label for="p1">Trois portes</label>
+                <br />
+                <input id="p2" type="radio" name="porte" value="4 portes"  /> <label for="p2">Quatre portes</label>
+                <br />
+                <input id="p3" type="radio" name="porte" value="5 portes"  /> <label for="p3">Cinq portes</label>
+                <br /><br /><br />
+
+                Choisissez le pack d'options :<br />
+
+                <input id="o1" type="radio" name="opt" value="toutes les options"  /> <label for="o1">Toutes les options</label>
+                <br />
+                <input id="o2" type="radio" name="opt" value="ABS, Climatisation, Radio"  /> <label for="o2">ABS, Climatisation, Radio</label>
+                <br />
+                <input id="o3" type="radio" name="opt" value="aucune option"  /> <label for="o3">Aucune option</label>
+                <br /><br /><br />
+
+                Choisissez l'énergie :<br />
+
+                <input id="e1" type="radio" name="Energie" value="Essence"  /> <label for="e1">Essence</label><br />
+                <input id="e2" type="radio" name="Energie" value="Diesel"  /> <label for="e2">Diesel</label><br />
+                <input id="e3" type="radio" name="Energie" value="Ethanol"  /> <label for="e3">Ethanol</label><br />
+                <br /><br />	
+                <input type="button"  id="b1" name="bouton" value="Vérification" />
+
+            </form>
+        </div>
+
+        <div id="res"></div>
+
+
+
+        <script>
+            function affVerif()
+            {
+                // On récupère tous les boutons radio dans le tableau tabRadio
+
+                tabOption = ['couleur','porte','opt','Energie'];
+                var tabInfo = new Array(tabOption.length);
+
+
+                for (k=0; k < tabOption.length; k++)
+                {
+                    var tabRadio = document.getElementsByName(tabOption[k]);
+                    tabInfo[k]='Vous n\'avez pas fait de choix';
+
+                    for(var i=0; i<tabRadio.length; i++)
+                    {
+                        if(tabRadio[i].checked)
+                        {
+                            tabInfo[k] =  tabRadio[i].value;
+                            break;
+                        }
+                    }
+                }
+
+                resultat = '<br /><br />Vos choix : <br />'
+                for (k=0; k < tabOption.length; k++)
+                {
+                    resultat += tabOption[k] + ' : ' + tabInfo[k] + '<br />';
+                }
+
+                document.getElementById('res').innerHTML = resultat;
+            }
+
+            document.getElementById('b1').addEventListener('click',affVerif);
+
+        </script>
+    </body>
+</html>

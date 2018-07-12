@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boutons radios</title>
+
+    </head>
+
+    <body>
+        <div>
+            Choisissez la couleur de votre voiture ? :<br/>
+            <form name="f1">
+                <input id="c1" type="radio" name="couleur" value="blanc"/> <label for="c1">Blanc</label>
+                <br/>
+                <input id="c2" type="radio" name="couleur" value="rouge"/> <label for="c2">Rouge</label>
+                <br/>
+                <input id="c3" type="radio" name="couleur" value="gris"/> <label for="c3">Gris</label>
+                <br/>
+                <input id="c4" type="radio" name="couleur" value="bleu"/> <label for="c4">Bleu</label>
+                <br/>
+                <input id="c5" type="radio" name="couleur" value="noir"/> <label for="c5">Noir</label>
+                <br/><br/>
+
+
+                Choisissez le nombre de portes ? :<br/>
+
+                <input id="p1" type="radio" name="porte" value="3 portes"/> <label for="p1">Trois portes</label>
+                <br/>
+                <input id="p2" type="radio" name="porte" value="4 portes"/> <label for="p2">Quatre portes</label>
+                <br/>
+                <input id="p3" type="radio" name="porte" value="5 portes"/> <label for="p3">Cinq portes</label>
+                <br/><br/><br/>
+
+                Choisissez le pack d'options :<br/>
+
+                <input id="o1" type="radio" name="opt" value="toutes les options"/> <label for="o1">Toutes les options</label>
+                <br/>
+                <input id="o2" type="radio" name="opt" value="ABS, Climatisation, Radio"/> <label for="o2">ABS, Climatisation, Radio</label>
+                <br/>
+                <input id="o3" type="radio" name="opt" value="aucune option"/> <label for="o3">Aucune option</label>
+                <br/>
+
+                <input type="button" id="b1" name="bouton" value="Vérification"/>
+
+            </form>
+        </div>
+
+        <div id="res"></div>
+
+
+
+        <script>
+            function affVerif()
+            {
+                var tabRadio1=document.getElementsByName('couleur');
+                var tabRadio2=document.getElementsByName('porte');
+                var tabRadio3=document.getElementsByName('opt');
+
+                var info1='Vous n\'avez pas fait de choix';
+                var info2='Vous n\'avez pas fait de choix';
+                var info3='Vous n\'avez pas fait de choix';
+
+                for(var i=0;i<tabRadio1.length;i++)
+                {
+                    if(tabRadio1[i].checked)
+                    {
+                        info1=tabRadio1[i].value;
+                        break;
+                    }
+                }
+
+
+                for(var i=0;i<tabRadio2.length;i++)
+
+                {
+                    if(tabRadio2[i].checked)
+                    {
+                        info2=tabRadio2[i].value;
+                        break;
+                    }
+                }
+
+
+                for(var i=0;i<tabRadio3.length;i++)
+                {
+                    if(tabRadio3[i].checked)
+                    {
+                        info3=tabRadio3[i].value;
+                        break;
+                    }
+                }
+                document.getElementById('res').innerHTML='<br /><br />Vos choix : <br /> Couleur '+info1+'<br />Nombre de portes : '+info2+'<br />Pack options : '+info3;}document.getElementById('b1').addEventListener('click',affVerif);
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
