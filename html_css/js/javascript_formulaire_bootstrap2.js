@@ -1,13 +1,25 @@
-function afficher()
+function verif()
 {
-    window.alert('coucou');
-    document.getElementById('bouton3').removeEventListener('click', afficher);
+    var tabchamps['nom', 'prenom', 'adresse1', 'cp', 'ville','email'];
+    
+    
+    
+    
+    if(tabchamps[] == null)
+        {
+            evt.preventDefault();
+        }
 }
 
-document.getElementById('bouton2').onclick = function()
-{
-    afficher();
-}
 
-document.getElementById('bouton3').addEventListener('click', afficher);
+
+
+
+
+
+
+
+
+
+ document.getElementById('envoyer').addEventListener('submit', verif);
 
