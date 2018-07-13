@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> regexp </title>
+    </head>
+
+    <body>
+
+
+
+        <script>
+            // On définit la chaine pour effectuer la recherche
+            var cp = "12556"; 
+
+            // L'expression régulière : les mots qui contiennent script ou Script ou gag
+            var objReg = /^[0-9]{5}$/g;
+
+            // On récupère les occurrences trouvées
+            var resultat = objReg.test(cp);
+
+            console.log("resultat =" + resultat);
+        </script>
+
+
+    </body>
+</html>
