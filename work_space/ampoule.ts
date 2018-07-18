@@ -21,7 +21,7 @@ class ampoule
         this.couleur = couleur;
     }
 
- }
+}
 
  let monAmpoule = new ampoule();
  console.log("couleur de mon ampoule : " + monAmpoule.couleur);
