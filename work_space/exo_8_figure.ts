@@ -1,7 +1,7 @@
 export class Rectangle
  {
-    longueur : number;
-    largeur : number;
+    private longueur : number;
+    private largeur : number;
 
     constructor(longueur? :number, largeur? : number)
     {
@@ -9,32 +9,31 @@ export class Rectangle
         this.largeur = largeur;
 
     }
-    getLongueur() : number
+    public getLongueur() : number
     {
         return this.longueur ;
     }
-    setLongueur(longueur : number)
+    public setLongueur(longueur : number)
     {
         this.longueur = longueur;
     }
-    getLargeur() : number
+    public getLargeur() : number
     {
         return this.largeur ;
     }
-    setlargeur(largeur : number)
+    public setlargeur(largeur : number)
     {
         this.largeur = largeur;
     }
-
-    aire() : number
+    public aire() : number
     {
         return (this.longueur * this.largeur);
     }
-    perimetre() : number
+    public perimetre() : number
     {
         return ((this.longueur + this.largeur) * 2 ); 
     }
-    isCarre() : string
+    public isCarre() : string
     {
         if (this.longueur == this.largeur)
         {
@@ -51,11 +50,15 @@ export class Rectangle
     }
 }
 
-abstract class Figure
-{
-    constructor()
+export abstract class Figure 
+{   
+    public constructor()
     {
-
+        
     }
+     abstract aire() : number;
+   
+     abstract perimetre() : number;
+        
 }
 
