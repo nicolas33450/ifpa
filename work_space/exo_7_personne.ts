@@ -100,7 +100,7 @@ class Employe extends Personne
     }
 }
 
-class Professeur extends Employe
+class Professeur extends Employe 
 {   
     constructor(nom? : string, prenom? : string, matiere? : string) 
     { 
