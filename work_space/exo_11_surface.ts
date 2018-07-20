@@ -1,6 +1,7 @@
 abstract class Terrain 
 {
-    constructor(longueur? : number, largeur? : number)
+    private forme  : Forme[] = []
+    constructor()
     {
         
     }
@@ -15,6 +16,10 @@ class Forme
     {
         this.longueur = longueur;
         this.largeur = largeur;
+    }
+
+    toString() : string{
+        return (" aire du terrain : " + )
     }
 }
 
@@ -37,4 +42,7 @@ class cercle extends Forme
 }
 
 
-let rectangle1 = new Rectangle( 100, 50)
+let rectangle1 = new Rectangle( 100, 50);
+let rectangle2 = new Rectangle( 100, 50);
+let rectangle3 = new Rectangle( 100, 50);
+console.log(rectangle1.toString());
