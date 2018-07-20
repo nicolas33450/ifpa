@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -8,6 +9,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+exports.__esModule = true;
 var Vehicule = /** @class */ (function () {
     function Vehicule(modele, annee, prix, type) {
         Vehicule.dernierMat++;
@@ -53,62 +55,63 @@ var Vehicule = /** @class */ (function () {
     Vehicule.dernierMat = 0;
     return Vehicule;
 }());
+exports.Vehicule = Vehicule;
 var Voiture = /** @class */ (function (_super) {
     __extends(Voiture, _super);
     function Voiture(modele, annee, prix, type) {
         var _this = _super.call(this, modele, annee, prix, type) || this;
-        Voiture.dervoit++;
-        _this.nbvoit = Voiture.dervoit; /* autre version pour incrementer l'id*/
+        Voiture.nbvoiture++;
         return _this;
     }
     Voiture.prototype.toString = function () {
-        return (_super.prototype.toString.call(this) + " // nb de voitures : " + this.nbvoit);
+        return (_super.prototype.toString.call(this) + " // nb de voitures : " + Voiture.nbvoiture);
     };
-    Voiture.dervoit = 0;
+    Voiture.nbvoiture = 0;
     return Voiture;
 }(Vehicule));
+exports.Voiture = Voiture;
 var Camion = /** @class */ (function (_super) {
     __extends(Camion, _super);
     function Camion(modele, annee, prix, type) {
         var _this = _super.call(this, modele, annee, prix, type) || this;
-        Camion.dercam++;
-        _this.nbcam = Camion.dercam; /* autre version pour incrementer l'id*/
+        Camion.nbcam++;
         return _this;
     }
     Camion.prototype.toString = function () {
-        return (_super.prototype.toString.call(this) + " // nb de camion : " + this.nbcam);
+        return (_super.prototype.toString.call(this) + " // nb de camion : " + Camion.nbcam);
     };
-    Camion.dercam = 0;
+    Camion.nbcam = 0;
     return Camion;
 }(Vehicule));
+exports.Camion = Camion;
 var Moto = /** @class */ (function (_super) {
     __extends(Moto, _super);
     function Moto(modele, annee, prix, type) {
         var _this = _super.call(this, modele, annee, prix, type) || this;
-        Moto.dermoto++;
-        _this.nbmoto = Moto.dermoto; /* autre version pour incrementer l'id*/
+        Moto.nbmoto++;
         return _this;
     }
     Moto.prototype.toString = function () {
-        return (_super.prototype.toString.call(this) + " // nb de moto : " + this.nbmoto);
+        return (_super.prototype.toString.call(this) + " // nb de moto : " + Moto.nbmoto);
     };
-    Moto.dermoto = 0;
+    Moto.nbmoto = 0;
     return Moto;
 }(Vehicule));
+exports.Moto = Moto;
 var Tracteur = /** @class */ (function (_super) {
     __extends(Tracteur, _super);
     function Tracteur(modele, annee, prix, type) {
         var _this = _super.call(this, modele, annee, prix, type) || this;
-        Tracteur.dertrac++;
-        _this.nbtrac = Tracteur.dertrac; /* autre version pour incrementer l'id*/
+        Tracteur.nbtrac++;
         return _this;
     }
     Tracteur.prototype.toString = function () {
-        return (_super.prototype.toString.call(this) + " // nb de tracteur : " + this.nbtrac);
+        return (_super.prototype.toString.call(this) + " // nb de tracteur : " + Tracteur.nbtrac);
     };
-    Tracteur.dertrac = 0;
+    Tracteur.nbtrac = 0;
     return Tracteur;
 }(Vehicule));
+exports.Tracteur = Tracteur;
 var voiture = new Voiture("fiat", 2000, 5000, "suv");
 console.log(voiture.toString());
 var voiture2 = new Voiture("ferrari", 2018, 65000, "sport");
@@ -123,4 +126,5 @@ var tracteur = new Tracteur("relou", 3015, 100552, "caraille");
 console.log(tracteur.toString());
 var tracteur1 = new Tracteur("azerty", 2015, 12300, "caraille");
 console.log(tracteur1.toString());
-console.log(" nb total de vehicules : " + Vehicule.dernierMat);
+console.log("nb total de vehicules : " + Vehicule.dernierMat);
+console.log("nb de voitures : " + Voiture.nbvoiture + " // nb de camions : " + Camion.nbcam + " // nb de moto : " + Moto.nbmoto + " // nb de tracteur : " + Tracteur.nbtrac);

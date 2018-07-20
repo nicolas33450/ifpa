@@ -1,4 +1,4 @@
-abstract class Vehicule
+export abstract class Vehicule
 {
     // attributs //
     private matricule : number;
@@ -69,75 +69,64 @@ abstract class Vehicule
     }
 }
 
-class Voiture extends Vehicule
+export class Voiture extends Vehicule
 {
-    static dervoit = 0;
-    nbvoit : number;
+    static nbvoiture = 0;    
 
     constructor(modele? : string, annee? : number, prix? : number, type? : string)
     {
         super(modele, annee, prix, type);
-        Voiture.dervoit ++; 
-        this.nbvoit = Voiture.dervoit; /* autre version pour incrementer l'id*/
-               
+        Voiture.nbvoiture ++;               
     }
     toString() : string
     {
-        return (super.toString() + " // nb de voitures : " + this.nbvoit)
+        return (super.toString() + " // nb de voitures : " + Voiture.nbvoiture)
     }
 }
-class Camion extends Vehicule
+ export class Camion extends Vehicule
 {   
-    static dercam = 0;
-    nbcam : number;
+    static nbcam = 0;
+     
 
     constructor(modele? : string, annee? : number, prix? : number, type? : string)
     {
         super(modele, annee, prix, type);
-        Camion.dercam ++; 
-        this.nbcam = Camion.dercam; /* autre version pour incrementer l'id*/
-               
+        Camion.nbcam ++;               
     }
 
     toString() : string
     {
-        return (super.toString() + " // nb de camion : " + this.nbcam)
+        return (super.toString() + " // nb de camion : " + Camion.nbcam)
     }
 }
-class Moto extends Vehicule
+export class Moto extends Vehicule
 {   
-    static dermoto = 0;
-    nbmoto : number;
+    static nbmoto = 0;     
 
     constructor(modele? : string, annee? : number, prix? : number, type? : string)
     {
         super(modele, annee, prix, type);
-        Moto.dermoto ++; 
-        this.nbmoto = Moto.dermoto; /* autre version pour incrementer l'id*/
-               
+        Moto.nbmoto ++;              
     } 
     
     toString() : string
     {
-        return (super.toString() + " // nb de moto : " + this.nbmoto)
+        return (super.toString() + " // nb de moto : " + Moto.nbmoto)
     }
 }
-class Tracteur extends Vehicule
+export class Tracteur extends Vehicule
 {   
-    static dertrac = 0;
-    nbtrac : number;
+    static nbtrac = 0;     
 
     constructor(modele? : string, annee? : number, prix? : number, type? : string)
     {
         super(modele, annee, prix, type);
-        Tracteur.dertrac ++; 
-        this.nbtrac = Tracteur.dertrac; /* autre version pour incrementer l'id*/
-               
+        Tracteur.nbtrac ++;              
     }
 
     toString() : string
     {
-        return (super.toString() + " // nb de tracteur : " + this.nbtrac)
+        return (super.toString() + " // nb de tracteur : " + Tracteur.nbtrac)
     }
 }
 
@@ -160,6 +149,8 @@ console.log(tracteur.toString());
 let tracteur1 = new Tracteur ("azerty", 2015, 12300, "caraille");
 console.log(tracteur1.toString());
 
-console.log(" nb total de vehicules : " + Vehicule.dernierMat);
+console.log("nb total de vehicules : " + Vehicule.dernierMat);
+
+console.log("nb de voitures : " + Voiture.nbvoiture + " // nb de camions : " + Camion.nbcam + " // nb de moto : " + Moto.nbmoto + " // nb de tracteur : " + Tracteur.nbtrac )
 
 
