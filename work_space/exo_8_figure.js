@@ -42,3 +42,4 @@ var Figure = /** @class */ (function () {
     }
     return Figure;
 }());
+exports.Figure = Figure;
