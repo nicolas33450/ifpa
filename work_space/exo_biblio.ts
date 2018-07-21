@@ -3,7 +3,7 @@ class Biblio
     id : number;
     nom : string;
     nomdreDeLivreMax : number;
-    listeDeLivre : Array<5>;
+    listeDeLivre : Array<500>;
     adresse : string;
     ville : string;
 
@@ -21,11 +21,8 @@ class Biblio
     {
         return ("ID : " + this.id + " - nom : " + this.nom + " - nb de livres max : " + this.nomdreDeLivreMax  + " - adresse : " + this.adresse + " - ville : " + this.ville);
     }
-
     
 }
-
-
 class Livre 
 {
     static dernierId = 1; // pas de get te set pour le attributs static //
@@ -57,10 +54,14 @@ console.log(biblio1.toStringB());
 
 let livre1 = new Livre( "tyty", "toto", 50);
 console.log(livre1.toStringL());
+
 let livre2 = new Livre( "fgfgfgf", "aqdadada", 10);
 console.log(livre2.toStringL());
 
 
+	
+		
+ 
 
 
 
