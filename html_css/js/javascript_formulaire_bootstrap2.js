@@ -7,6 +7,7 @@ function verif()
     
     if(tabchamps[] == null)
         {
+            alert ('perdu');
             evt.preventDefault();
         }
 }
